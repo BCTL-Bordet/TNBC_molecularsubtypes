@@ -1,2 +1,8 @@
 # TNBC_molecularsubtypes
 This repository contains the code to perform TNBC molecular subtypes classification as defined by Bareche Y, Venet D, Ignatiadis M, Aftimos P, Piccart M, Rothe F, et al. Unravelling triple-negative breast cancer molecular heterogeneity using an integrative multiomic analysis. Ann Oncol. 2018 Apr 1;29(4):895–902. 
+
+Lehmann’s molecular subtypes were defined using the list of genes positively and negatively associated to each subtype published in the original paper (1). Each gene was first normalized to a mean of 0 and a standard deviation of 1. Signatures for each subtype were calculated as the difference of the mean for the genes positively and negatively associated. For each sample the TNBC molecular subtype with the highest score was assigned. The main difference with the published method is the lack of the unstable subtype, as each sample was associated with a subtype.
+Bareche et al. (2) reassigned samples classified as basal-like 2 (BL2)  using the second highest score. This process resulted in five TNBC subtypes more stable namely basal-like (BL), immunomodulatory (IM), mesenchymal (M), luminal androgen receptor (LAR) and mesenchymal stem-like (MSL).
+
+1.	Lehmann BD, Bauer JA, Chen X, Sanders ME, Chakravarthy AB, Shyr Y, et al. Identification of human triple-negative breast cancer subtypes and preclinical models for selection of targeted therapies. J Clin Invest. 2011 Jul;121(7):2750–67. 
+2.	Bareche Y, Venet D, Ignatiadis M, Aftimos P, Piccart M, Rothe F, et al. Unravelling triple-negative breast cancer molecular heterogeneity using an integrative multiomic analysis. Ann Oncol. 2018 Apr 1;29(4):895–902.
