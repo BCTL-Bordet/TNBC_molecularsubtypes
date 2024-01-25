@@ -137,3 +137,12 @@ calcSig = function(d, sig, dropEmpty=TRUE, balanced=FALSE, isCount=FALSE, useNB=
   }
   return(val);
 }
+                 
+getSig = function(name="sig")
+{ nm = paste0(baseDir(), "/Sigs/", name, ".RData");
+if (!file.exists(nm)) { stop("Sig ", name, " does not exist."); }
+f = load(nm);
+if (!identical(f, "sig")) { stop("Not the right info in sig.RData"); }
+return(sig);
+}
+                 
